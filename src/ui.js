@@ -7,12 +7,13 @@ import ReactFlow, { Controls, Background, MiniMap } from 'reactflow';
 import { useStore } from './store';
 import { shallow } from 'zustand/shallow';
 import { InputNode } from './nodes/inputNode';
-import { LLMNode } from './nodes/llmNode';
+import { LLMNode } from './nodes/llmNode.tsx';
 import { OutputNode } from './nodes/outputNode';
-import { TextNode } from './nodes/textNode';
 
 import 'reactflow/dist/style.css';
 import { MyCustomNode } from './nodes/myCustomNode';
+import { TextNode } from './nodes/textNode.tsx';
+import ImageNode from './nodes/imageNode.tsx';
 
 const gridSize = 20;
 const proOptions = { hideAttribution: true };
@@ -21,7 +22,7 @@ const nodeTypes = {
   llm: LLMNode,
   customOutput: OutputNode,
   text: TextNode,
-  customNode: MyCustomNode,
+  image: ImageNode,
 };
 
 const selector = (state) => ({

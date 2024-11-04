@@ -16,7 +16,7 @@ export const OutputNode = ({ id, data }) => {
   };
 
   return (
-    <div style={{width: 200, height: 80, border: '1px solid black'}}>
+    <div style={{ width: 200, height: 80, border: '1px solid black' }}>
       <Handle
         type="target"
         position={Position.Left}
@@ -28,10 +28,10 @@ export const OutputNode = ({ id, data }) => {
       <div>
         <label>
           Name:
-          <input 
-            type="text" 
-            value={currName} 
-            onChange={handleNameChange} 
+          <input
+            type="text"
+            value={currName}
+            onChange={handleNameChange}
           />
         </label>
         <label>
